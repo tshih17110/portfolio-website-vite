@@ -3,11 +3,8 @@ import '../styles/main.scss';
 
 dotSpinner.register();
 
-interface LoadingAnimationProps {
-    className?: string; 
-}
 
-function LoadingAnimation({ className }: LoadingAnimationProps) {
+function LoadingAnimation() {
     return (
         <l-dot-spinner
             size="45"
