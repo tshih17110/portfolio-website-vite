@@ -1,0 +1,28 @@
+@use '../abstracts/breakpoints';
+// @import './breakpoint.scss';
+
+$intro-text: #FFFFFF;
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 auto;
+    height: 70vh;
+    user-select: none;
+    transition: 0.5s;
+    .intro-title {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    .intro-description {
+        width: fit-content;
+        font-size: 0.75rem;
+        font-weight: 5;
+    }
+}
+
+
+
+

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+$font-stack: 'Josefin Sans', sans-serif;
+$hover-glow: rgb(71, 235, 238);
+
+body {
+    font-family: $font-stack;
+    color: #FFFFFF !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: inherit;
+}

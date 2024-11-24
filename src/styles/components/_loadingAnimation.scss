@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+
+.loading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; 
+    z-index: 1000; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    // @include animate(fadeIn, 1s, ease-in-out, forwards);
+    // @include animate(fadeOut, 1s, ease-in-out, forwards);
+    &.fade-in {
+        @include animate(fadeIn, 0.5s, ease-in-out, forwards);
+    }
+
+    &.fade-out {
+        @include animate(fadeOut, 0.5s, ease-in-out, forwards);
+    }
+}
+
+.loading-animation.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

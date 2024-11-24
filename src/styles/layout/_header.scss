@@ -1,0 +1,67 @@
+@use '../abstracts/breakpoints';
+@use '../abstracts/globals' as *;
+
+$navbar-text: #FFFFFF;
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        margin-top: 5%;
+        margin-right: 10%;
+    }
+    .links {
+        display: flex;
+        gap: 4rem;
+        color: #FFFFFF;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+// .header {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background-color: #fff; // or any other background color you prefer
+//     z-index: 1000; // ensures the header is above other elements
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // optional: adds a slight shadow for better visibility
+  
+//     .navbar {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding: 1rem; // adjust as needed
+//     }
+  
+//     .links {
+//       display: flex;
+//       gap: 1rem; // adjust spacing between links as needed
+  
+//       a {
+//         text-decoration: none;
+//         color: #000; // or any other color you prefer
+  
+//         &:hover {
+//           text-decoration: underline; // or any other hover effect you prefer
+//         }
+//       }
+  
+//       .resume {
+//         font-weight: bold; // or any other styling for the resume link
+//       }
+//     }
+//   }
+  
+//   // optional: add padding to the top of the body to prevent content from being hidden behind the fixed header
+//   body {
+//     padding-top: 60px; // adjust based on the height of your header
+//   }
+  

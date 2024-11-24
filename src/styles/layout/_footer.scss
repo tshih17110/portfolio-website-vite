@@ -1,0 +1,77 @@
+@use '../abstracts/breakpoints';
+@use '../abstracts/globals' as *;
+$footer-text: #FFFFFF;
+
+.footer {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+    // font-family: $font-stack;
+    .footer-container {
+        color: $footer-text;
+        font-weight: 300;
+        font-size: 0.8rem;
+        .logo-links {
+            color: $footer-text;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;  
+            a {
+                display: inline-block;
+                transition: 0.3s;
+                color: #FFFFFF;
+                width: 2rem;
+                height: 2rem;
+                // @include xs-breakpoint {
+                //     width: 1.5rem;
+                //     height: 1.5rem;
+                // }
+                // @include xl-breakpoint {
+                //     width: 2rem;
+                //     height: 2rem;
+                // }
+                // @include landscape-breakpoint {
+                //     width: 1.5rem;
+                //     height: 1.5rem;
+                // }
+            }
+            a:hover {
+                color :$hover-glow;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+a {
+    display: inline-block;
+    transition: 0.3s;
+    color: #FFFFFF;
+    width: 2rem;
+    height: 2rem;
+    // @include xs-breakpoint {
+    //     width: 1.5rem;
+    //     height: 1.5rem;
+    // }
+    // @include xl-breakpoint {
+    //     width: 2rem;
+    //     height: 2rem;
+    // }
+    // @include landscape-breakpoint {
+    //     width: 1.5rem;
+    //     height: 1.5rem;
+    // }
+}
+a:hover {
+    color :$hover-glow;
+    transform: translateY(-3px);
+}
+
+

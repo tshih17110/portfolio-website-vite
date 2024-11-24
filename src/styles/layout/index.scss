@@ -1,0 +1,25 @@
+@forward 'footer';
+@forward 'header';
+@forward 'home';
+@forward 'intro';
+
+.layout-container {
+    position: relative;
+}
+
+.loading-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.layout-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.loaded {
+        @extend .fade-in !optional;
+    }
+}
